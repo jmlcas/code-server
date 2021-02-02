@@ -12,9 +12,10 @@ services:
       - PASSWORD=p4ssw0rd  #optional
       - SUDO_PASSWORD=p4ssw0rd  #optional
       - SUDO_PASSWORD_HASH=p4ssw0rd  #optional
-      - PROXY_DOMAIN=code.labarta.xyz  #optional
+      - PROXY_DOMAIN= <tudominio.com>  #optional
     volumes:
       - ./config:/config
     ports:
-      - 4443:8443
+      - 8443:8443
     restart: unless-stopped
+    
