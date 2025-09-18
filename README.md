@@ -1,3 +1,3 @@
-# code-server
-code-server - Visual Studio Code
-ver en "localhost:8443"
+# Code-server
+
+ver en "http://localhost:8443"
