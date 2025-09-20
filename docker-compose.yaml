@@ -13,9 +13,12 @@ services:
       - SUDO_PASSWORD_HASH= #optional
       - PROXY_DOMAIN= <tudominio.com>  #optional
       - DEFAULT_WORKSPACE=/config/workspace #optional
+      - DOCKER_MODS="linuxserver/mods:universal-docker"
     volumes:
       - ./config:/config
+      - /var/run/docker.sock:/var/run/docker.sock      
     ports:
       - "8443:8443"
     restart: unless-stopped
+
 
