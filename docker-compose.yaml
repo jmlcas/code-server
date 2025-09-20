@@ -13,11 +13,11 @@ services:
       - SUDO_PASSWORD_HASH= #optional
       - PROXY_DOMAIN= <tudominio.com>  #optional
       - DEFAULT_WORKSPACE=/config/workspace #optional
-      - PWA_APPNAME=code-server #optional
     volumes:
       - ./config:/config
     ports:
       - "8443:8443"
     restart: unless-stopped
     
+
 
